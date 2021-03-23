@@ -1,5 +1,23 @@
 const drivers = ['Bobby', 'Sammy', 'Sally', 'Annette', 'Sarah', 'bobby'];
 
+const driversTwo = [
+        {
+          name: 'Bobby',
+          hometown: 'Pittsburgh' },
+        {
+          name: 'Sammy',
+          hometown: 'New York' } ,
+        {
+          name: 'Sally',
+          hometown: 'Cleveland' },
+        {
+          name: 'Annette',
+          hometown: 'Los Angeles' },
+        {
+          name: 'Bobby',
+          hometown: 'Tampa Bay' }
+      ];
+
 beforeEach(function () {
       drivers.length = 0;
 
@@ -19,7 +37,7 @@ console.log(resultTwo);
 
 //Filter Method to Retrive Objects in Array
 function matchName(resultThree) {
-  return resultThree = drivers.filter((persons) => persons.name === 'Bobby')
+  return resultThree = driversTwo.filter((persons) => persons.name === 'Bobby')
 }
 
 console.log(resultThree);
